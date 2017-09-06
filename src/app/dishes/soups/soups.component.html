@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let soup of soups; let i = index" (click)="orders.addToOrderList(soup)">
+      <div class="thumbnail">
+        <img src="{{ soup.img }}" alt="dish1">
+        <div class="caption">
+          <h4>{{ soup.name }}</h4>
+          <p>{{ soup.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-orders></app-orders>

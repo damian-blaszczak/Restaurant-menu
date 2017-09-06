@@ -1,0 +1,27 @@
+ <div class="h-100 container text-center">
+    <label for="text" class="bold">Zamówienia</label>
+    <hr>
+    <div style="height: 300px; overflow: auto">
+      <div *ngFor="let order of getOrders()" class="d-flex justify-content-between">
+        <div class="bold col"> {{ order.dish.name }} </div><br>
+        <div class="col" style="margin-top: 15px;">Cena: {{ order.dish.price*order.amount }} zł</div>
+        <div>
+          <div class="col" style="margin-top:-5px"><p style="margin-bottom: 2px; width: 90px">Ilość:</p>
+            <div class="btns"><br>
+              <button (click)="removeDish(order.dish)" class="btn btn-secondary remote"><i class="fa fa-minus" aria-hidden="true" style="display: flex; justify-content: center; line-height: 10px;"></i></button>
+              <p>  {{ order.amount }}  </p>
+              <button (click)="addDish(order.dish)" class="btn btn-secondary remote"><i class="fa fa-plus" aria-hidden="true" style="display: flex; justify-content: center; line-height: 10px;"></i></button>
+              <button (click)="deleteDish(order.dish)" class="btn btn-danger remote"><i class="fa fa-trash" aria-hidden="true" style="display: flex; justify-content: center; line-height: 8px;"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <label for="text" class="bold">Koszt całkowity</label>
+      <hr>
+      <label for="text" class="bold">{{ totalCost() }} zł</label><br>
+      <button (click)="myAlert()" class="btn btn-primary basket"><i class="fa fa-shopping-basket" aria-hidden="true"></i></button>
+      <button (click)="deleteAllDishes()" class="btn btn-danger basket"><i class="fa fa-trash" aria-hidden="true"></i></button>
+    </div>
+</div>

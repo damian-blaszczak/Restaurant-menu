@@ -1,0 +1,26 @@
+.container {
+    float: right;
+    width: 40%
+}
+.bold {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+button {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+}
+.basket {
+  width: 100px;
+  height: 50px;
+}
+.remote {
+  width: 25px;
+  height: 25px;
+}

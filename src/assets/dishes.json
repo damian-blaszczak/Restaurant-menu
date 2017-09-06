@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "category": "desserts",
+      "name": "Szarlotka",
+      "img": "../assets/img/szarlotka.jpg",
+      "price": "5"
+    },
+    {
+      "category": "desserts",
+      "name": "Tort bezowy",
+      "img": "../assets/img/tort_bezowy.jpg",
+      "price": "12"
+    },
+    {
+      "category": "desserts",
+      "name": "Tiramisu",
+      "img": "../assets/img/tiramisu.jpeg",
+      "price": "8"
+    },
+    {
+      "category": "desserts",
+      "name": "Mus truskawkowy",
+      "img": "../assets/img/mus_truskawkowy.jpg",
+      "price": "7"
+    },
+    {
+      "category": "desserts",
+      "name": "Suflet czekoladowy",
+      "img": "../assets/img/suflet.jpg",
+      "price": "7"
+    },
+    {
+      "category": "desserts",
+      "name": "Sernik",
+      "img": "../assets/img/sernik.jpg",
+      "price": "7"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<ngb-carousel>
+  <ng-template ngbSlide *ngFor="let imageSource of imageSources; let i = index">
+    <img src="{{ imageSources[i] }}" alt="Promotions">
+    <div class="carousel-caption">
+      <h1>{{ describes[i] }}</h1>
+    </div>
+  </ng-template>
+</ngb-carousel>
