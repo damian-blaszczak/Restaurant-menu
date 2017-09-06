@@ -1,6 +1,8 @@
-# A1
+# Restaurant menu
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.5.
+
+To run app type `npm install` and next `ng serve`.
 
 ## Development server
 
